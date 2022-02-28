@@ -56,11 +56,9 @@ window.addEventListener("keydown", function (event) {
         if (!correctLetters.includes(keyPress)) {
           //First time I Have hit the key
           correctLetters.push(keyPress);
-          console.log("Correct " + correctLetters);
           displayWord();
         } else {
           shownotification(keyPress);
-          console.log("Correct " + correctLetters);
         }
       } else {
         if (!wrongLetters.includes(keyPress)) {
@@ -69,7 +67,6 @@ window.addEventListener("keydown", function (event) {
           updateWrongLetters();
         } else {
           shownotification(keyPress);
-          console.log("InCorrect " + wrongLetters);
         }
       }
     }
@@ -101,7 +98,6 @@ function displayWord() {
       result += letter;
     }
     result += "</span>";
-    console.log(result);
   }
   wordEl.innerHTML = result;
 
