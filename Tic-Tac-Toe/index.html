@@ -9,19 +9,22 @@
 </head>
 <body>
     <h1>Tic-Tac-Toe</h1>
-    <p id = "player-statment"></p>
-    <div class="game-container">
+    <p>Player <span id="current-player">X</span>, click a box</p>
+    <div id="tic-tac-toe-container">
             <svg class="figure-container">
+
+                <!-- Game Board -->
                 <line x1="75" y1="20" x2="75" y2="210"></line>
                 <line x1="20" y1="75" x2="210" y2="75"></line>
                 <line x1="150" y1="20" x2="150" y2="210"></line>
                 <line x1="20" y1="150" x2="210" y2="150"></line>
 
-                <!--X-->
-                <line x1="85" y1="85" x2="140" y2="140"></line>
-                <line x1="85" y1="140" x2="140" y2="85"></line>
-                <!--O-->
-                <circle cx="112.5" cy="112.5" r="30"></circle>
+                <g id = "xs-and-os">
+
+                </g>
+                
+                
+                
 
             </svg>
     </div>
@@ -30,6 +33,6 @@
 
 
 
-    <script src="scripts.js"></script>
+    <script src="script.js"></script>
 </body>
 </html>
