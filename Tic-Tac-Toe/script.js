@@ -2,11 +2,14 @@ var currentPlayer; // string
 var keepPlaying; // bool
 var row, col; // int
 var board; // array
-var keepPlaying;
 
 const ticTacToeContainer = document.getElementById("tic-tac-toe-container");
 let playerIdstatment = document.getElementById("current-player");
 const xs_and_os = document.getElementById("xs-and-os");
+const popUp = document.getElementById("popup-container");
+const finalMessage = document.getElementById("final-message");
+const notification = document.getElementById("notification-container");
+const playAgainBtn = document.getElementById("play-button");
 
 function main() {
   currentPlayer = "X";
@@ -79,7 +82,7 @@ function markBoard(row, col) {
       drawMark(row, col);
       marked = true;
     } else {
-      console.log("Spot is being used");
+      shownotification();
     }
   }
   return marked;
@@ -123,7 +126,7 @@ function drawMark(row, col) {
 
 ticTacToeContainer.addEventListener("click", function (event) {
   if (keepPlaying) {
-    row, col = getRowCol(event);
+    row, (col = getRowCol(event));
     marked = markBoard(row, col);
     if (marked) {
       checkWinner();
@@ -132,6 +135,13 @@ ticTacToeContainer.addEventListener("click", function (event) {
     console.log(board);
   }
 });
+
+function shownotification() {
+  notification.classList.add("show");
+  setTimeout(function () {
+    notification.classList.remove("show");
+  }, 2000);
+}
 
 function checkWinner() {
   var winner = false;
@@ -210,11 +220,51 @@ function checkWinner() {
     winner = true;
     winningPlayer = board[0][2];
   }
+
+  // Cat Check
+  else if (
+    board[0][0] != "" &&
+    board[0][1] != "" &&
+    board[0][2] != "" &&
+    board[1][0] != "" &&
+    board[1][1] != "" &&
+    board[1][2] != "" &&
+    board[2][0] != "" &&
+    board[2][1] != "" &&
+    board[2][2] != ""
+  ) {
+    winner = true;
+    keepPlaying = false;
+    winningPlayer = "The Cat";
+  }
+
   // Winner Check
   if (winner) {
     keepPlaying = false;
-    console.log("Player " + winningPlayer + " has won!");
+    finalMessage.textContent = "🎉Player " + winningPlayer + " has won the game!🎉";
+    popUp.style.display = "flex";
   }
 }
+
+playAgainBtn.addEventListener("click", function(){
+  keepPlaying = true;
+  board.splice(0);
+  clearBoard();
+  main();
+  
+  popUp.style.display = "none";
+});
+
+function clearBoard(){
+  var marks = xs_and_os.firstElementChild;
+  while (marks){
+    marks.remove();
+    marks = xs_and_os.firstElementChild;
+  }
+}
+
+//xs_and_os.innerHTML = "";
+// OR
+//xs_and_os.textContent = "";
 
 main();

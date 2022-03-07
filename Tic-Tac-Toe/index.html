@@ -1,38 +1,39 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Tic-Tac-Toe</title>
-    <link href="style.css" rel="stylesheet">
-</head>
-<body>
+    <link href="style.css" rel="stylesheet" />
+  </head>
+  <body>
     <h1>Tic-Tac-Toe</h1>
     <p>Player <span id="current-player">X</span>, click a box</p>
     <div id="tic-tac-toe-container">
-            <svg class="figure-container">
+      <svg class="figure-container">
+        <!-- Game Board -->
+        <line x1="75" y1="20" x2="75" y2="210"></line>
+        <line x1="20" y1="75" x2="210" y2="75"></line>
+        <line x1="150" y1="20" x2="150" y2="210"></line>
+        <line x1="20" y1="150" x2="210" y2="150"></line>
 
-                <!-- Game Board -->
-                <line x1="75" y1="20" x2="75" y2="210"></line>
-                <line x1="20" y1="75" x2="210" y2="75"></line>
-                <line x1="150" y1="20" x2="150" y2="210"></line>
-                <line x1="20" y1="150" x2="210" y2="150"></line>
-
-                <g id = "xs-and-os">
-
-                </g>
-                
-                
-                
-
-            </svg>
+        <g id="xs-and-os"></g>
+      </svg>
+    </div>
+    <div id="popup-container">
+      <div id="modal">
+        <h2 id="final-message"></h2>
+        <button id="play-button">Play Again</button>
+      </div>
     </div>
 
-
-
-
+    <div id="notification-container">
+      <p>
+        That spot is taken.
+      </p>
+    </div>
 
     <script src="script.js"></script>
-</body>
+  </body>
 </html>
