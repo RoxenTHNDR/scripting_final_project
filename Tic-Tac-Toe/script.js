@@ -132,7 +132,6 @@ ticTacToeContainer.addEventListener("click", function (event) {
       checkWinner();
       switchPlayer();
     }
-    console.log(board);
   }
 });
 
@@ -155,7 +154,7 @@ function checkWinner() {
     board[0][0] != ""
   ) {
     winner = true;
-    winningPlayer = board[0][0];
+    winningPlayer = "Player " + board[0][0];
   }
   // Row 1
   else if (
@@ -164,7 +163,7 @@ function checkWinner() {
     board[1][0] != ""
   ) {
     winner = true;
-    winningPlayer = board[1][0];
+    winningPlayer = "Player " + board[1][0];
   }
   // Row 2
   else if (
@@ -173,7 +172,7 @@ function checkWinner() {
     board[2][0] != ""
   ) {
     winner = true;
-    winningPlayer = board[2][0];
+    winningPlayer = "Player " + board[2][0];
   }
   // Col 0
   else if (
@@ -182,7 +181,7 @@ function checkWinner() {
     board[0][2] != ""
   ) {
     winner = true;
-    winningPlayer = board[0][2];
+    winningPlayer = "Player " + board[0][2];
   }
   // Col 1
   else if (
@@ -191,7 +190,7 @@ function checkWinner() {
     board[0][1] != ""
   ) {
     winner = true;
-    winningPlayer = board[0][1];
+    winningPlayer = "Player " + board[0][1];
   }
   // Col 2
   else if (
@@ -200,7 +199,7 @@ function checkWinner() {
     board[0][2] != ""
   ) {
     winner = true;
-    winningPlayer = board[0][2];
+    winningPlayer = "Player " + board[0][2];
   }
   // Diag 1
   else if (
@@ -209,7 +208,7 @@ function checkWinner() {
     board[0][0] != ""
   ) {
     winner = true;
-    winningPlayer = board[0][0];
+    winningPlayer = "Player " + board[0][0];
   }
   // Diag 2
   else if (
@@ -218,7 +217,7 @@ function checkWinner() {
     board[0][2] != ""
   ) {
     winner = true;
-    winningPlayer = board[0][2];
+    winningPlayer = "Player " + board[0][2];
   }
 
   // Cat Check
@@ -241,7 +240,7 @@ function checkWinner() {
   // Winner Check
   if (winner) {
     keepPlaying = false;
-    finalMessage.textContent = "🎉Player " + winningPlayer + " has won the game!🎉";
+    finalMessage.textContent = winningPlayer + " has won the game!";
     popUp.style.display = "flex";
   }
 }
@@ -262,9 +261,5 @@ function clearBoard(){
     marks = xs_and_os.firstElementChild;
   }
 }
-
-//xs_and_os.innerHTML = "";
-// OR
-//xs_and_os.textContent = "";
 
 main();
