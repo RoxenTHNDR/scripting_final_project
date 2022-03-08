@@ -35,7 +35,7 @@ function updateWrongLetters() {
 
   if (wrongLetters.length == figure_parts.length) {
     gamePlaying = false;
-    finalMessage.innerHTML = "Emotional Damage😔";
+    finalMessage.innerHTML = "Emotional Damage😔<br>The word was '" + selectedWord + "'";
     popup.style.display = "flex";
   }
 }
@@ -84,9 +84,8 @@ playAgainBtn.addEventListener("click", function(){
 });
 
 function getRandomWord() {
-  const words = ["Fnatic", "Liquid", "Misfits"];
   const randIndex = Math.floor(Math.random() * words.length);
-  selectedWord = words[randIndex].toLowerCase();
+  selectedWord = words[randIndex][0].toLowerCase();
 }
 
 function displayWord() {
@@ -110,5 +109,4 @@ function displayWord() {
   }
 }
 
-getRandomWord();
-displayWord();
+
