@@ -49,11 +49,12 @@ __This will also be bold__
 ## Code blocks
 
 We use the `System.out.println()` statement in Java to print a message to the screen.
-```
+```java
 System.out.println("Fenced");
 System.out.println("code");
 System.out.println("block");
 ```
+And console.log() in javascript
 ```javascript
 console.log("Language specific code block");
 ```
