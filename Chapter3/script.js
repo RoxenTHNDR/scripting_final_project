@@ -7,7 +7,7 @@ startBtn.addEventListener('click', function() {
     var regex = /^[0-9]+$/; // regular expression to test for numbers and not letters or punctuation/special characters
 
     while (keepInputing){
-        var input = prompt("Please insert a number, or if you would like to quite insert \"Q\":")
+        var input = prompt("Please insert a number, or if you would like to quit insert \"Q\":")
 
         if (input === "Q" || input === "q"){
             // Ending the loop when the user wants to quit
@@ -16,7 +16,7 @@ startBtn.addEventListener('click', function() {
         }
         else if (input === "" || input === " "){
             // Making sure the user actually inputs something
-            console.log("Invalid Input: Please insert a number, or if you would like to quite insert \"Q\"");
+            console.log("Invalid Input: Please insert a number, or if you would like to quit insert \"Q\"");
         }
         else if (input === null){
             // The window will give a null value if the prompt window is closed before the user quits with "Q" so this handles that
@@ -24,7 +24,7 @@ startBtn.addEventListener('click', function() {
         }
         else if (!input.match(regex)){
             // Test if the number is actually a number
-            console.log("Invalid Input: Please insert a number, or if you would like to quite insert \"Q\"");
+            console.log("Invalid Input: Please insert a number, or if you would like to quit insert \"Q\"");
         }
         else{
             // Combining the total and retrieving the count of times the user inputs a number
