@@ -1,23 +1,20 @@
 $(function(){
-    $("ul").on("click", "li", function() {
-        $(this).hide();
+    $("#en").click(function() {
+        $("h1").text("Hello!");
+        $("#en").text("English");
+        $("#es").text("Spanish");
+        $("#fr").text("French");
     });
-    
-    $('ul').mousedown(function(event) {
-        switch (event.which) {
-            case 1:
-                alert('Left Mouse button pressed.');
-                break;
-            case 2:
-                alert('Middle Mouse button pressed.');
-                break;
-            case 3:
-                alert('Right Mouse button pressed.');
-                break;
-            default:
-                alert('You have a strange Mouse!');
-        }
+    $("#es").click(function() {
+        $("h1").text("¡Hola!");
+        $("#en").text("inglés");
+        $("#es").text("español");
+        $("#fr").text("francés");
     });
-
-
+    $("#fr").click(function() {
+        $("h1").text("Bonjour!");
+        $("#en").text("anglais");
+        $("#es").text("espagnol");
+        $("#fr").text("français");
+    });
 });
