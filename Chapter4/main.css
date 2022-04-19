@@ -13,20 +13,27 @@ h1 {
     color: green;
 }
 
-#languages {
+#to-do-list, #newItem {
     list-style: none;
     padding: 0;
     text-align: center;
+    width: 300px;
+    margin: 0 auto 50px;
 }
 
-#languages li {
+#to-do-list li {
     border: 1px solid black;
-    display: inline-block;
+    display: block;
     padding: 10px;
+    margin-bottom: 5px;
 }
 
 #languages li:hover {
     background-color: red;
     color: white;
     cursor: pointer;
+}
+
+textarea {
+    font-size: 30px;
 }

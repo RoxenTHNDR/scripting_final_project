@@ -100,6 +100,7 @@ function checkGuess(ballPlacement,userChoice){
     // If the user guesses correctly it will run the gameWin function and end the game
     if (ballPlacement[userChoice] == "x"){
         gameWin();
+        isPlaying = false;
     }
     else if (ballPlacement[userChoice] != "x" && tries == 2){
         tries -= 1;
