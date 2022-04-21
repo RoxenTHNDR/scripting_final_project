@@ -19,3 +19,8 @@ The main focus of this week was on Array's and objects. I find these very intere
 ## Chapter 3
 
 The focus of our time in chapter 3 was both completing and getting us ready to build base programs on our own, such as this [hangman game](https://roxenthndr.github.io/scripting_final_project/Hangman/). I really enjoyed this chapter as it gave me a sense of accomplishment upon completing a few programs completely on my own, such as the Chapter3 folder within this repository. It may just be a basic find the average of the numbers imputed by the user, however it was creating the handling so that there were no errors that piqued my interest. At the point of writing this I have yet to completely start on the game that is assigned next week, however I am looking forward to completing that as well, I'm thinking of doing a cup and ball guessing game.
+
+## Chapter 4
+
+In chapter 4 we mainly talked about forms and how to build them. On top of different ways to get user input. I feel like this is probably one of the most important chapters thus fair, due to the fact practically any website now is going to have some sort of form, whether that be shopping or simply creating an account for their website. For the assignment the thing I am most proud of was creating classes based off of user inputs so that it would make it easier to filter through a table. 
+
