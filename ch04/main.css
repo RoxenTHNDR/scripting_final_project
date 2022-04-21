@@ -1,0 +1,160 @@
+body {
+    font-family: sans-serif;
+    padding: 0.5em;
+    margin: 0;
+  }
+  
+  
+  * {
+      /* margin: 0; */
+      /* padding: 0; */
+      box-sizing: border-sizing;
+      max-width: 100%;
+  }
+  
+  form {
+    padding: 1em;
+    border: 1px solid #c1c1c1;
+    /* we create our grid */
+    display: grid;
+    grid-column-gap: 16px;
+    grid-row-gap: 8px;
+    grid-template-columns: 2fr 5fr 3fr;
+  }
+  
+  form input[type="submit"] {
+    background: #2260e6;
+    color: #fff;
+    cursor: pointer;
+    border: none;
+    padding: 5px;
+  }
+  
+  form input[type="submit"]:hover {
+    background: #e67e22;
+  }
+  
+  label {
+      grid-column-start: 1;
+      grid-column-end: 2; 
+      text-align: right;
+  }
+  
+  input, select, .boxes {
+      grid-column-start: 2;
+      grid-column-end: 3;
+  }
+  
+  .error {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      color: red;
+      font-style: italic;
+  }
+  
+  .person {
+      border: 1px solid #ccc;
+      margin-bottom: 0.5em;
+      padding: 1em 2em;
+  }
+  
+  @media screen and (min-width: 540px) {
+      .box.radio {
+          display: inline-block;
+      }
+  }
+
+  table {
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 1px;
+    word-wrap: break-word;
+}
+
+#toggle {
+    display: none;
+}
+
+.toggle-border {
+    border: 1px solid black;
+    display: block;
+    width: 40px;
+    height: 20px;
+    border-radius: 20px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.toggle-indicator {
+    display: block;
+    width: 16px;
+    height: 16px;
+    background-color: black;
+    border-radius: 50%;
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    transition: left 0.3s ease-in-out;
+}
+
+.light-mode {
+    background-color: white;
+    color : black;
+}
+
+.light-mode .toggle-border {
+    border-color: black;
+}
+.light-mode .toggle-indicator {
+    background-color :black;
+    left: 2px;
+}
+
+.dark-mode {
+    background-color: black;
+    color : white;
+}
+
+.dark-mode .toggle-border {
+    border-color:white;
+}
+.dark-mode .toggle-indicator {
+    background-color : white;
+    left: 22px;
+}
+
+.dark-mode th {
+    border: 1px solid #fff;
+}
+
+.dark-mode td {
+    border: 1px solid #fff;
+}
+
+.light-mode th, td {
+    border: 1px solid black;
+}
+
+#moon{
+    color: black;
+    right: 3px;
+    top:10px;
+    position: absolute;
+}
+#sun{
+    color: white;
+    left: 4.25px;
+    top:10px;
+    position: absolute;
+}
+
+
+
+
