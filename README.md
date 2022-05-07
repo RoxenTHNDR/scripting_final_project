@@ -24,3 +24,7 @@ The focus of our time in chapter 3 was both completing and getting us ready to b
 
 In chapter 4 we mainly talked about forms and how to build them. On top of different ways to get user input. I feel like this is probably one of the most important chapters thus fair, due to the fact practically any website now is going to have some sort of form, whether that be shopping or simply creating an account for their website. For the assignment the thing I am most proud of was creating classes based off of user inputs so that it would make it easier to filter through a table. 
 
+## Final Project
+
+My final project was loosly based off a childhood favorite game, called Card-jitsu. This game was a more complicated version of rock paper scissors. While playing this you would earn expierience towards your black belt. To progess further than that you had to challenge sensei and win. However, if you had tried to challenge sensei before you reached black belt it would be impossible to beat hom. So keeping the same vien I made it to where its impossible to win the challenge until you have at least 10 wins in practice.
+
