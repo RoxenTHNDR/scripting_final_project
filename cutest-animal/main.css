@@ -1,0 +1,45 @@
+* {
+    max-width: 100%;
+}
+#image-container {
+    display: flex;
+    width: 400px;
+}
+#image-container img {
+    width: 33%;
+}
+
+#chart-container {
+    max-width: 450px;
+    max-height: 300px;
+    border: 1px solid #ccc;
+    display: none;
+    margin-bottom: 1em;
+    padding: 5px;
+}
+
+#results-container {
+    border-collapse: collapse;
+    table-layout: fixed;
+    width: 450px;
+    display: none;
+}
+
+#results-container th, #results-container td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+#results-container th:nth-child(1) {
+    width: 30%;
+}
+#results-container th:nth-child(2) {
+    width: 40%;
+}
+#results-container th:nth-child(3) {
+    width: 15%;
+}
+#results-container th:nth-child(4) {
+    width: 15%;
+}
+

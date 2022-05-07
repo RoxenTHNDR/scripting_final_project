@@ -29,43 +29,4 @@
     border-radius: 10px;
   }
 
-  #cup0{
-      position: absolute;
-      height: 197.66px;
-      width: 132px;
-      left: 10px;
-      pointer-events: none;
-      
-  }
-
-  #cup1{
-    position: absolute;
-    height: 197.66px;
-    width: 132px;
-    left:142px;
-    pointer-events: none;
-  }
-
-  #cup2{
-    position: absolute;
-    height: 197.66px;
-    width: 132px;
-    right:10px;
-    pointer-events: none;
-  }
-
-  .start {
-    transform: translateY(100px);
-  }
-
-  .ball-container{
-    height: 100%;
-    width: 100%;
-    stroke: black;
-    stroke-width: 5px;
-    fill:#fff;
-  }
-
-  #play-button.began {
-    display:none;
-  }
+  

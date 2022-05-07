@@ -53,3 +53,21 @@ function getAverage(count, total){
     var average = total / count || 0;
     return average;
 }
+
+
+function sortByLength(arr){
+    for(let i = 1; i < arr.length; i++){
+        if(arr[i-1].length > arr[i].length){
+            
+        }
+    }
+    return arr;
+}
+
+function divideByTwo(arr){
+    let divided = [];
+    for (let i = 0; i < arr.length; i++) {
+        divided.push(arr[i] / 2)
+    }
+    return divided;
+}

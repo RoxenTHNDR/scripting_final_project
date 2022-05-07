@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Card-Jitsu</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="style.css" rel="stylesheet" />
+</head>
+<body>
+    <h1>Card-Jitsu</h1>
+    <p id = "game-text">Choose an element!</p>
+    <br>
+    <div id = "game-container">
+
+        <div id="player1">
+            <i id = "playerFire" class="fa-solid fa-fire fa-2xl"></i>
+            <i id = "playerWater" class="fa-solid fa-water fa-2xl"></i>
+            <i id = "playerSnow" class="fa-solid fa-snowflake fa-2xl"></i>
+        </div>
+        
+        <div id="player2">
+            <i id ="opponentFire" class="fa-solid fa-fire fa-2xl"></i>
+            <i id ="opponentWater"class="fa-solid fa-water fa-2xl"></i>
+            <i id ="opponentSnow"class="fa-solid fa-snowflake fa-2xl"></i>
+        </div>
+
+    </div>
+    <br>
+    
+    <div id="element-container">
+        <button id = "btnFire"><i class="fa-solid fa-fire fa-2xl"></i></button>
+        <button id = "btnWater"><i class="fa-solid fa-water fa-2xl"></i></button>
+        <button id = "btnSnow"><i class="fa-solid fa-snowflake fa-2xl"></i></button>
+    </div>
+
+    <div id="popup-container">
+        <div id="modal">
+            <h2 id = "message">Welcome to Card-Jitsu</h2>
+            
+            <div id = "info">
+                <label for="name">Name: </label>
+                <input type="text" id="name">
+
+                <div class="boxes radio">
+                    <p>What color would you like to be?</p>
+                    <div class="box radio">
+                        <input type="radio" name="color" id="red" value="Red">
+                        <label for="red">Red</label>
+                    </div>
+                    
+                    <div class="box radio">
+                        <input type="radio" name="color" id="blue" value="Blue">
+                        <label for="blue">Blue</label>
+                    </div>
+                    
+                    <div class="box radio">
+                        <input type="radio" name="color" id="black" value="Black">
+                        <label for="black">Black</label>
+                    </div>
+                    
+                </div>
+            </div>
+            
+            <br>
+            <button id = "practice-button">Practice</button>
+            <br>
+            <br>
+            <button id = "sensei-button">Challenge Sensei</button>
+        </div>
+
+    </div>
+    
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="finalapp.js"></script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cutest Animals</title>
+    <link href="main.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.1.1.js"></script>
+</head>
+<body>
+    <header>
+        <h1>Cutest Animal Voting App</h1>
+        <p>Please vote for the cutest animal from the 3 animals shown.</p> 
+        <p>You have <span id="votes">25 votes</span> remaining.</p>
+    </header>
+    <section id="image-container"></section>
+    
+    <canvas id="chart-container"></canvas>
+
+    <table id="results-container">
+        <thead>
+            <th>Image</th>
+            <th>Name</th>
+            <th>Clicks</th>
+            <th>Views</th>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.7.1/dist/chart.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>
