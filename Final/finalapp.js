@@ -10,6 +10,7 @@ let isPlaying = true;
 $("#practice-button").click(function(){
     validate();
     if(noMoreInfo){
+        isSensei = false;
         setColor();
         $("#popup-container").css("display","none");
     }
