@@ -26,5 +26,4 @@ In chapter 4 we mainly talked about forms and how to build them. On top of diffe
 
 ## Final Project
 
-My final project was loosly based off a childhood favorite game, called Card-jitsu. This game was a more complicated version of rock paper scissors. While playing this you would earn expierience towards your black belt. To progess further than that you had to challenge sensei and win. However, if you had tried to challenge sensei before you reached black belt it would be impossible to beat hom. So keeping the same vien I made it to where its impossible to win the challenge until you have at least 10 wins in practice.
-
+My final project was loosely based off a childhood favorite game, called Card-jitsu. This game was a more complicated version of rock paper scissors. While playing this you would earn experience towards your black belt. To progress further than that you had to challenge sensei and win. However, if you had tried to challenge sensei before you reached black belt it would be impossible to beat him. So keeping the same vein I made it to where its impossible to win the challenge until you have at least 10 wins in practice.
